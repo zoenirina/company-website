@@ -9,15 +9,16 @@ import  './CarouselHome.css'
 const CarouselHome = () => {
   return (
     <div>
-        
-        <Carousel controls dark>
+        <div className="container-carousel ">
+        <Carousel    className='carous'>
     
-      <Carousel.Item style={{height:"550px"}}>
+      <Carousel.Item style={{height:"500px"}}>
+      
        <div className='demo'>
-       <img className='w-100' src={image1}/>
+       <img className='' src={image1}alt="image1" />
        {/* <p style={{position:"absolute",top:"20px",left:"30px"}}>Lorem bgfxbfgbnfnghngfh ghn,ghn,g</p> */}
        </div>
-        <Carousel.Caption style={{position:"absolute",top:"40px",left:"12%",textAlign:"start" }}>
+        <Carousel.Caption className='w-100 carouselcap' id="carouselcap">
         <div className='bac'>
           <h3 className=' animate__animated animate__fadeInRight' style={{animationDelay:"0.1s"}}>Application Pos gastro</h3>
           <p  className=' animate__animated animate__fadeInRight' style={{animationDelay:"0.5s"}}>L'assistance qu'il vous faut pour mieux gérer votre restaurant.</p>
@@ -34,12 +35,12 @@ const CarouselHome = () => {
          </span>
          </div>
         </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item style={{height:"550px"}}>
+      </Carousel.Item >
+      <Carousel.Item style={{height:"500px"}} className='aaa'>
       <div className='demo'>
-        <img className='w-100' src={image02}/>
+        <img className='' src={image02}alt="image1"/>
         </div>
-        <Carousel.Caption style={{position:"absolute",top:"40px",left:"12%",textAlign:"start" }}>
+        <Carousel.Caption className='carouselcap'>
         <div className='bac'>
           <h3 className=' animate__animated animate__fadeInRight' style={{animationDelay:"0.1s"}}>Application Pos gastro</h3>
           <p  className=' animate__animated animate__fadeInRight' style={{animationDelay:"0.5s"}}>L'assistance qu'il vous faut pour mieux gérer votre restaurant.</p>
@@ -57,11 +58,11 @@ const CarouselHome = () => {
          </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{height:"550px"}}>
+      <Carousel.Item style={{height:"500px"}}>
       <div className='demo'>
-      <img className='w-100' src={image01}/>
+      <img className=' bg-secondary' src={image01} alt="image1"/>
       </div>
-      <Carousel.Caption style={{position:"absolute",top:"40px",left:"12%",textAlign:"start" }}>
+      <Carousel.Caption className='carouselcap'>
         <div className='bac'>
           <h3 className=' animate__animated animate__fadeInRight' style={{animationDelay:"0.1s"}}>Application Pos gastro</h3>
           <p  className=' animate__animated animate__fadeInRight' style={{animationDelay:"0.5s"}}>L'assistance qu'il vous faut pour mieux gérer votre restaurant.</p>
@@ -80,7 +81,7 @@ const CarouselHome = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-
+    </div>
     </div>
   )
 }

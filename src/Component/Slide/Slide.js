@@ -54,7 +54,7 @@ const Slide = () => {
 
   return (
     <div className='row'>
-        <motion.div
+        {/* <motion.div
         // animate={{ rotate: 180 }}
         // transition={{
         //   repeat: 1,
@@ -66,7 +66,7 @@ whileInView={{left:'30px'}}
        transition={{ type: 'spring' }}
        style={{position:"relative",textAlign:"start"}}>
                 <button>coucou</button>
-        </motion.div>
+        </motion.div> */}
 
         <div className='mb-5 p-5 bg-orange text-white'>
         <h2>{datas[selected].left[0]}</h2>

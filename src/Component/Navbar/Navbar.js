@@ -8,7 +8,7 @@ import youtube from '../../Component/asset/youtube.png'
 const Navbar = () => {
   return (
     <div className="navba shadow">
-        <div className="flex" style={{height:"24px"}}>
+        {/* <div className="flex" style={{height:"24px"}}>
          <div className="icone-share">
 
             <a href=""><img className='ico' src={facebook}/></a>
@@ -18,11 +18,17 @@ const Navbar = () => {
             <p  className="contact pt-3">DES QUESTIONS? APPELER-NOUS:06 74 89 20/ 07 71 50 84 82</p> 
          </div>
          
-         </div>
-         <hr/>
+         </div> */}
+         
          <div className="navbar">
             <h2 style={{paddingLeft:"20px"}} className="Title fw-bold">Titre du Site</h2>
-            <button className="icon-menu">menu</button>
+            <ul className='d-flex gap-5'>
+              <li className='nav-item'>Acceuil</li>
+              <li className='nav-item'>Services</li>
+              <li className='nav-item'>Equipe</li>
+              <li className='nav-item'>Contact</li>
+            </ul>
+            <button className="icon-menu">Nous contacter</button>
         </div>
         {/* <div id="Left" class="animTest w3-animate-left">Animation is Fun!</div>     */}
 

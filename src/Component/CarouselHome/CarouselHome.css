@@ -12,8 +12,10 @@
 ul{
     list-style: none;
 }
-.bac{
-    color: #1F1717;
+.bac {
+    color: #f4f2f2;
+    text-decoration: none;
+    text-align: start;
 }
 .btn-orang{
     background-color: rgb(230, 115, 0);
@@ -24,3 +26,56 @@ ul{
     color: rgb(230, 115, 0);
     /* color: #509650; */
 }
+.carouselcap{
+    z-index: 6;
+/* position:absolute;
+top:0px;
+left:-300px;
+bottom: 0px;
+right: 0px;
+width: 1600px;
+align-items: flex-start;
+height: inherit;
+text-align:start;
+text-justify: auto;
+color: blanchedalmond;
+background-color: #0505059e;  */
+
+}
+.carousel-control-prev{
+}
+.container-carousel:before{
+    position:absolute;
+margin-top:0px;
+background-color: #0505059e;
+left:0px;
+content: '';
+width: 100%;
+height: 500px;
+z-index: 6;
+}
+.container-carousel img{
+
+     width: 100%;
+    
+    
+}
+@media only screen and (max-width: 768px) {
+    .container-carousel:before{ 
+       
+        height: 500px;
+    }
+    .container-carousel img{
+       
+        position: relative;
+        left: 0ch;
+         width: 2000px;
+         overflow: hidden;
+         height: 550px;
+        
+    }
+    #carouselcap{
+        font-size: 12px;
+    }
+}
+
